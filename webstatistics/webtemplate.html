@@ -1,0 +1,85 @@
+<html>
+<header>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant:300,400,600,700">
+    <link rel="stylesheet" type="text/css href="stylesheet.css">
+    <title>{name}- Web Statistics</title>
+</header>
+
+<body>
+    <div class="title-thing">
+        <h4>Web Statistics Status Page</h4> </div>
+    <div class="big-thing bot-information">
+        <div class="other-thing">
+            <div class="avatar"> <img src="{bot_avatar_icon_url}" alt='' /> </div>
+        </div>
+        <div class="other-thing">
+            <p> <span class="white bold">Name: </span>{name}
+                <p>
+                    <p> <span class="white bold">Owner: </span>{owner}</p>
+                    <p> <span class="white bold">Created: </span>{created}</p>
+                    <p> <span class="white bold">Uptime: </span>{uptime}</p>
+        </div>
+    </div>
+    <div class="title-thing">
+        <h4>Bot Information</h4> </div>
+    <div class="big-thing system-information">
+        <div class="other-thing">
+            <div class="title-thing-two">
+                <h4>Servers</h4> </div>
+            <p>{total_servers}</p>
+            <div class="title-thing-two">
+                <h4>Users</h4> </div>
+            <p>{user_count}</p>
+            <div class="title-thing-two">
+                <h4>Active Cogs</h4> </div>
+            <p>{active_cogs}</p>
+            <div class="title-thing-two">
+                <h4>Commands</h4> </div>
+            <p>{total_commands}</p>
+        </div>
+        <div class="other-thing">
+            <div class="title-thing-two">
+                <h4>Channels</h4> </div>
+            <p>{total_channels}</p>
+            <div class="title-thing-two">
+                <h4>Text</h4> </div>
+            <p>{text_channels}</p>
+            <div class="title-thing-two">
+                <h4>Voice</h4> </div>
+            <p>{voice_channels}</p>
+            <div class="title-thing-two">
+                <h4>Messages Received</h4> </div>
+            <p>{messages_received}</p>
+            <div class="title-thing-two">
+                <h4>Commands Run</h4> </div>
+            <p>{commands_run}</p>
+        </div>
+        <div class="other-thing">
+            <div class="title-thing-two">
+                <h4>CPU</h4> </div>
+            <p>{cpu_usage:.1f}%</p>
+            <div class="title-thing-two">
+                <h4>Memory</h4> </div>
+            <p>{memory_usage_mb:.0f}MB ({memory_usage:.1f}%)</p>
+            <div class="title-thing-two">
+                <h4>Threads</h4> </div>
+            <p>{threads}</p>
+            <div class="title-thing-two">
+                <h4>I/O</h4> </div>
+            <p><span class="white">Total reads: </span>{io_reads}</p>
+            <p><span class="white ">Total writes: </span>{io_writes}</p>
+        </div>
+    </div>
+    <div class="title-thing">
+        <h4>Loaded Cogs</h4> </div>
+    <div class="big-thing system-information">{loaded_cogs}</div>
+    <div class="title-thing">
+        <h4>Available Commands</h4> </div>
+    <div class="big-thing system-information">{all_commands}</div>
+    <div class="title-thing">
+        <h4>Servers</h4> </div>
+    <div class="servers">{servers}</div>
+    <footer>{date_now}</footer>
+</body>
+
+</html>
