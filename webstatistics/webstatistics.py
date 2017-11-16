@@ -1,8 +1,8 @@
-from cogs.utils.dataIO import dataIO
-from aiohttp import web
-import datetime
 import asyncio
+import datetime
 import os
+from aiohttp import web
+from cogs.utils.dataIO import dataIO
 
 try:
     import ipgetter
